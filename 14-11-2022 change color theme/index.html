@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="card_profile">
+            <div class="img"><img src="bala.JPG" alt="Profile_pic"></div>
+        </div>
+        <div class="content">
+            <h2 class="name">John due</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ducimus maxime eligendi, molestiae repudiandae</p>
+        </div>
+        <div class="links">
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-linkedin' ></i>
+            <i class='bx bxl-github' ></i>
+            <i class='bx bxl-instagram' ></i>
+        </div>
+    </section>
+    <!-- color-theme section -->
+    <section class="theme">
+        <button class="btn red" onclick=" theme.style.setProperty('--theme-color','#db3434')"></button>
+        <button class="btn blue" onclick=" theme.style.setProperty('--theme-color', '#3498db')"></button>
+        <button class="btn purple" onclick=" theme.style.setProperty('--theme-color', '#8e44ad')"></button>
+        <button class="btn green" onclick=" theme.style.setProperty('--theme-color', '#1cb65d')"></button>
+        <button class="btn yellow" onclick=" theme.style.setProperty('--theme-color', '#f4b932')"></button>
+    </section>
+    <script>
+        const theme = document.querySelector(':root');
+        const btns = document.querySelector('.btn');
+ 
+            // btns.addEventListener("click", function(e){
+            //     const color = e.currentTarget.classList;
+            //     if(color.contains("red")){
+            //         theme.style.setProperty("--theme-color", "#db3434")
+            //         console.log("succeess");
+            //     }
+            // });
+    </script>
+</body>
+</html>
